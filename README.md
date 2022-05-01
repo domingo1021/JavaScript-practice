@@ -1,3 +1,8 @@
-<h1>This is a repository that I practice for `JavaScript`.</h1>
+<h1>Repository mainly for preparing JS Fullstack project in 2022-website-develop</h1>
 
-[a link](https://javascript.info/)
+<br>
+
+This is a repository that I practice some handon tasks for `JavaScript`.
+<br>
+
+[JavaScript Tutorial](https://javascript.info/)
