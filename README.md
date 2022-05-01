@@ -1,4 +1,5 @@
-<h1>Repository mainly for preparing JS Fullstack project in 2022-website-develop</h1>
+<h3>JS Practice</h3>
+<p>Repository mainly for preparing JS Fullstack project in 2022-website-develop</p>
 
 <br>
 
