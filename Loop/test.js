@@ -20,7 +20,6 @@ console.log(array_)
 
 
 console.log("----------do while--------")
-
 // do while loop, 
 // which will do the operation at first, 
 // then check for condition in while();
@@ -40,7 +39,6 @@ while (condition <5){
 }
 
 console.log("----------for .. in ...------------")
-
 // for(.. in object)
 let student = {
     id: 12345,
@@ -52,7 +50,6 @@ for(let key in student){
 }
 
 console.log("----------for .. of ...------------")
-
 // only for iterable key-value 
 for(let element of student.favorite_color){
     console.log(`Element in iterable variable: ${element} `)
