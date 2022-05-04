@@ -1,3 +1,13 @@
+// different ways to initiate an Array
+console.log("Different way to initiate array.")
+let new_array = new Array(1, 2, 3, 4, 5);
+let new_array_2 = new Array(5);
+let new_array_3 = new Array();
+let normal_array = [1, 2, 3, 4, 5];
+new_array_3.length = 5;
+console.log(`${new_array}\n${new_array_2}\n${new_array_3}\n${normal_array}`);
+
+console.log("\n------------- Array operation ---------------");
 let arr = ["a","b","c","d","e"];
 arr.splice(0,3,"ab","cc");
 console.log(`Splice and replace: ${arr}`);
@@ -21,3 +31,27 @@ console.log(`Slice: ${arr_2.slice(1, 3)}`);
 arr_2.forEach(function(element, index, array){
     console.log(`${element} is the ${index} index in array ${array}`);
 })
+
+
+// Array insert.
+console.log("\nArray insert function.")
+array_test = [1,2,3];
+console.log(`Original: ${array_test}`);
+
+function array_insert(array_, index, value){
+    // array_: an array want to insert some value at index = index.
+    // index: where to insert
+    // value: what value to insert.
+    for(let i=array_.length; i>index; i--){
+        array_[i] = array_[i-1]
+    }
+    array_[index] = value;
+    return array_
+}
+// Insert with js function.
+function array_insert_2(array_, index, value){
+    array_.splice(index, 0 , value);
+    return array_;
+}
+console.log(array_insert(array_test, 1 , 0.2));
+console.log(array_insert_2(array_test, 0, 0));
