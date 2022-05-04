@@ -1,4 +1,8 @@
-console.log("-------new Obeject------")
+// 不能用 import 的方式
+let {Car, test_function, test} = require("./object.js");
+let prototype_car = new Car(1, "CCCar", "Taiwan");
+console.log(prototype_car)
+console.log("-------Initiate Obeject------")
 let car = new Object({
     id: 12121213131313,
     nation: "Taitan",
@@ -21,6 +25,7 @@ let car_2 = {
 console.log(car_2.shape)
 console.log(Object.keys(car_2));
 
+console.log("---------json object (with function as value.)------------")
 let teacher = {
     "name":"Domingo",
     "students":["a","b","c","d",],
@@ -44,11 +49,11 @@ let teacher = {
         console.log(msg);
     },
 }
-console.log("------- Single say hi ! ----------");
+console.log("Single say hi !");
 teacher.sayHi_0();
 teacher.sayHi_1();
 teacher.sayHi_2();
-console.log("-------- for all student, hi !----------");
+console.log("For all student, hi !");
 teacher.studentsHI();
 
 console.log("------To print out all key and value-------")
