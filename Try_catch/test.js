@@ -1,5 +1,5 @@
 function myFunction() {
-    const message = document.getElementById("result-message");
+    let message = document.getElementById("result-message");
     message.innerHTML = "";
     let x = document.getElementById("input-text").value;
     try {
