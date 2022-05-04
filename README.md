@@ -4,4 +4,5 @@
 This is a repository that I practice some hand on tasks for `JavaScript`.
 <br>
 [JavaScript Tutorial--1](https://javascript.info/)
+<br>
 [JavaScript Tutorial--2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction/)
