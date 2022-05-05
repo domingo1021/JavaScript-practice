@@ -1,3 +1,5 @@
+// Learn how to transform json object to string and parse from string to object.
+// can be used in client-server conversation.
 let student = {
     id : 1234,
     name : 'domingo',
