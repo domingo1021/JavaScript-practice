@@ -5,7 +5,8 @@ car_map.set("BMW", 20);
 car_map.set("Tesla", 30000000000);
 car_map.set(12345, 54321)
 
-console.log(car_map);
+console.log(car_map)
+console.log(`The value of "BMW" in car_map: ${car_map.get("BMW")}`);
 console.log(`Car_list size: ${car_map.size}`);
 
 for(let[key, value] of car_map){
@@ -35,6 +36,7 @@ let mary = { name: "Mary" };
 set.add(john);
 set.add(pete);
 set.add(mary);
+// add duplicated value will be ingored.
 set.add(john);
 set.add(mary);
 console.log("\n----------- Set --------------");
