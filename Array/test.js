@@ -55,3 +55,14 @@ function array_insert_2(array_, index, value){
 }
 console.log(array_insert(array_test, 1 , 0.2));
 console.log(array_insert_2(array_test, 0, 0));
+
+// Array.prototype.reduce function, reduce all list to a single value.
+function test_reduce(reduce_array, initialValue=0){
+    return reduce_array.reduce((previousValue, currentValue)=> previousValue+currentValue, initialValue)
+}
+console.log("------test ------ reduce-----")
+console.log(test_reduce([10,20,33],100))
+
+// js array is extendable.
+example = [1,2,3]
+console.log(example[4])
