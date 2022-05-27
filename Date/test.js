@@ -1,3 +1,4 @@
+
 date_1 = new Date(1999,10,21,13,0,0)
 date_2 = new Date(1999,10,21,13,10,5)
 span = date_2 - date_1
@@ -7,3 +8,13 @@ seconds = Math.floor(span/1000-hours*3600-minutes*60)
 // seconds = M
 
 console.log("剩餘:",hours,"小時", minutes,"分", seconds,"秒");
+
+// set timeout for event loop
+function hello(){
+    setTimeout(() => {
+        console.log("hello wolrd")
+        hello()
+    }, 1000);
+}
+hello()
+console.log("hey")
