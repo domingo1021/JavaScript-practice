@@ -39,7 +39,7 @@ while (condition <5){
 }
 
 console.log("----------for .. in ...------------")
-// for(.. in object)
+// for(.. in object), only get key.
 let student = {
     id: 12345,
     name: "John",
