@@ -66,3 +66,22 @@ console.log(test_reduce([10,20,33],100))
 // js array is extendable.
 example = [1,2,3]
 console.log(example[4])
+
+// array.prototype.map
+let ages = [10, 9, 15, 20 ,50, 15];
+let ages_after_one_year = ages.map( (age) => {
+    return age+1;
+})
+console.log(ages_after_one_year)
+
+// array.prototype.filter
+let greaterThenThirteen = ages.filter((age)=> age>13);
+console.log(greaterThenThirteen);
+
+//array.prtotype.find --> return the first one that fit the condition.
+let people = [
+    {name: "hello", age: 10},
+    {name: "world", age:9}
+]
+let tenYearOld = people.find( (person) => person.age === 10);
+console.log(tenYearOld);
